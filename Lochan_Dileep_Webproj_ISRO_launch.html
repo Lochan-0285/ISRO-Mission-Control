@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ISRO Mission Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🚀 ISRO MISSION CONTROL</h1>
+
+<canvas id="mainCanvas" width="800" height="500"></canvas>
+
+<div class="ui-box">
+    <label>MISSION CODE:</label><br><br>
+    <input type="text" id="codeField" placeholder="ISRO-XXXX-00">
+    <br><br>
+    <button onclick="generateCode()">GENERATE</button>
+    <button onclick="processLaunch()">LAUNCH</button>
+    <p id="displayStatus"></p>
+</div>
+
+<!-- 🔊 LOCAL SOUND -->
+<audio id="launchSound">
+    <source src="rocket-launch.mp3" type="audio/mpeg">
+</audio>
+
+<script src="launch_script.js"></script>
+
+</body>
+</html>
